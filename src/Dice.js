@@ -6,12 +6,11 @@ export default function Dice() {
   function click() {
     let randomNumber = Math.floor(Math.random() * 6) + 1;
     setNumber(randomNumber);
-    console(randomNumber);
   }
+  
   function renderDots() {
     const dots = [];
     for (let i = 0; i < number; i++) {
-      console.log(i);
       if(number === 5){
         if(i === 3){
             dots.push(<span className="dot freePoint" key={i}></span>);
