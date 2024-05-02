@@ -4,9 +4,9 @@ export default function Dice() {
   const [number, setNumber] = useState(3);
 
   function click() {
-    console.log("clicked");
     let randomNumber = Math.floor(Math.random() * 6) + 1;
     setNumber(randomNumber);
+    console(randomNumber);
   }
   function renderDots() {
     const dots = [];
@@ -50,7 +50,7 @@ export default function Dice() {
   }
 
   return (
-    <div>
+    <div >
       <div onClick={click} className={`dice ${addClassName()}`}>
         {number && renderDots()}
       </div>
