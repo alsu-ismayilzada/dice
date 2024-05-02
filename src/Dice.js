@@ -7,7 +7,6 @@ export default function Dice() {
     let randomNumber = Math.floor(Math.random() * 6) + 1;
     setNumber(randomNumber);
   }
-  
   function renderDots() {
     const dots = [];
     for (let i = 0; i < number; i++) {
@@ -49,7 +48,7 @@ export default function Dice() {
   }
 
   return (
-    <div >
+    <div>
       <div onClick={click} className={`dice ${addClassName()}`}>
         {number && renderDots()}
       </div>
