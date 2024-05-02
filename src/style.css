@@ -1,0 +1,97 @@
+.App {
+    height: 300px;
+    width: 550px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  .dice {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+  }
+  .dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .onePoint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .onePoint span{
+    background-color: red;
+  }
+  .twoPoints {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  /* .threePoints {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  } */
+  .fourPoints {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .fourPoints .dot {
+    margin: 0 5px;
+  }
+  .fivePoints {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .fivePoints .dot {
+    margin: 0 5px;
+  }
+  .fivePoints .freePoint {
+    position: absolute;
+    left: 34px;
+  }
+  .sixPoints {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .spesialPointOne{
+    display: flex;
+    margin-left: 57px;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+    margin-top: 3px;
+    /* align-items: flex-end; */
+  }
+  .spesialPointTwo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+    margin-left: 26px;
+    align-items: center;
+  }
+  .spesialPointThree{
+    display: flex;
+    margin-right: 57px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  
